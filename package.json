@@ -1,7 +1,7 @@
 {
-  "name": "react-grid-layout",
+  "name": "react-grid-layout-with-better-breakpoints",
   "version": "0.16.6",
-  "description": "A draggable and resizable grid layout with responsive breakpoints, for React.",
+  "description": "A draggable and resizable grid layout with responsive breakpoints, for React with added optional param for getting width from viewport instead of the component. To improve breakpoints handler.",
   "main": "index.js",
   "scripts": {
     "lint": "make lint",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:STRML/react-grid-layout.git"
+    "url": "git@github.com:goodylabs/react-grid-layout.git"
   },
   "keywords": [
     "react",
@@ -32,9 +32,9 @@
   "author": "Samuel Reed <samuel.trace.reed@gmail.com> (http://strml.net/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/STRML/react-grid-layout/issues"
+    "url": "https://github.com/goodylabs/react-grid-layout/issues"
   },
-  "homepage": "https://github.com/STRML/react-grid-layout",
+  "homepage": "https://github.com/goodylabs/react-grid-layout",
   "dependencies": {
     "classnames": "2.x",
     "lodash.isequal": "^4.0.0",
