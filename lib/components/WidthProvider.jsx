@@ -44,6 +44,7 @@ export default function WidthProvider<
     };
 
     mounted: boolean = false;
+    debounceTimeout: TimeoutID;
 
     componentDidMount() {
       this.mounted = true;
@@ -62,14 +63,20 @@ export default function WidthProvider<
 
     onWindowResize = () => {
       if (!this.mounted) return;
-      // eslint-disable-next-line
-      const node = ReactDOM.findDOMNode(this); // Flow casts this to Text | Element
-      if (node instanceof HTMLElement) {
-        this.setState({ width: node.offsetWidth });
-      }
-      if (this.props.breakpointFromViewport && typeof window !== "undefined") {
-        this.setState({ viewportWidth: window.innerWidth });
-      }
+      clearTimeout(this.debounceTimeout);
+      this.debounceTimeout = setTimeout(() => {
+        // eslint-disable-next-line
+        const node = ReactDOM.findDOMNode(this); // Flow casts this to Text | Element
+        if (node instanceof HTMLElement) {
+          this.setState({ width: node.offsetWidth });
+        }
+        if (
+          this.props.breakpointFromViewport &&
+          typeof window !== "undefined"
+        ) {
+          this.setState({ viewportWidth: window.innerWidth });
+        }
+      }, 100);
     };
 
     render() {
