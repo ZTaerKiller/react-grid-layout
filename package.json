@@ -1,6 +1,6 @@
 {
   "name": "react-grid-layout-with-better-breakpoints",
-  "version": "0.16.10",
+  "version": "0.16.11",
   "description": "A draggable and resizable grid layout with responsive breakpoints, for React with added optional param for getting width from viewport instead of the component. To improve breakpoints handler.",
   "main": "index.js",
   "scripts": {
