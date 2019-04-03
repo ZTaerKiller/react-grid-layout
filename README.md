@@ -1,9 +1,17 @@
-# React-Grid-Layout
+# React-Grid-Layout-with-better-breakpoints
 
-[![travis build](https://travis-ci.org/STRML/react-grid-layout.svg?branch=master)](https://travis-ci.org/STRML/react-grid-layout)
-[![CDNJS](https://img.shields.io/cdnjs/v/react-grid-layout.svg)](https://cdnjs.com/libraries/react-grid-layout)
-[![npm package](https://img.shields.io/npm/v/react-grid-layout.svg?style=flat-square)](https://www.npmjs.org/package/react-grid-layout)
-[![npm downloads](https://img.shields.io/npm/dt/react-grid-layout.svg?maxAge=2592000)]()
+[![travis build](https://travis-ci.org/goodylabs/react-grid-layout.svg?branch=master)](https://travis-ci.org/goodylabs/react-grid-layout)
+[![npm package](https://img.shields.io/npm/v/react-grid-layout-with-better-breakpoints.svg?style=flat-square)](https://www.npmjs.org/package/react-grid-layout-with-better-breakpoints)
+[![npm downloads](https://img.shields.io/npm/dt/react-grid-layout-with-better-breakpoints.svg?maxAge=2592000)]()
+
+
+**React-Grid-Layout-with-better-breakpoints** is forked from React-Grid-Layout, upgraded by better breakpoints handling.
+The original lib measures layout wrapper node for handling breakpoint. We've added option **breakpointFromViewport**,
+that makes viewport as breakpoint width provider. Additionaly we add debouncing for window resize handler to improve
+performance.
+
+---
+**Original README with updated API docs:**
 
 React-Grid-Layout is a grid layout system much like [Packery](http://packery.metafizzy.co/) or
 [Gridster](http://dsmorse.github.io/gridster.js/), for React.

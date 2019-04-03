@@ -1,4 +1,18 @@
 # Changelog
+0.16.9 (Apr 3, 2019)
+---
+
+- Updated README
+
+0.16.8 (Apr 3, 2019)
+---
+- Add debauncing to window resize handler to improve performance
+
+
+0.16.7 (Mar 21, 2019)
+---
+- Add breakpointFromViewport option to Responsive Grid Layout Props, which makes viewport as breakpoint width provider.
+
 
 0.16.6 (Mar 8, 2018)
 ----
