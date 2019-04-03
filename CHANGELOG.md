@@ -1,4 +1,9 @@
 # Changelog
+0.16.10 (Apr 3, 2019)
+---
+
+- Fix window resize handler evaluation if component is unmounted.
+
 0.16.9 (Apr 3, 2019)
 ---
 
