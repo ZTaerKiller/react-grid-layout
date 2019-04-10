@@ -37,6 +37,7 @@ type Props<Breakpoint: string = string> = {
   width: number,
   viewportWidth: number,
   breakpointFromViewport: boolean,
+  useCSSTransforms: boolean,
 
   // Callbacks
   onBreakpointChange: (Breakpoint, cols: number) => void,
@@ -69,6 +70,8 @@ export default class ResponsiveReactGridLayout extends React.Component<
 
     // # of cols. This is a breakpoint -> cols map
     cols: PropTypes.object,
+
+    useCSSTransforms: PropTypes.bool,
 
     // layouts is an object mapping breakpoints to layouts.
     // e.g. {lg: Layout, md: Layout, ...}
@@ -120,7 +123,8 @@ export default class ResponsiveReactGridLayout extends React.Component<
     layouts: {},
     onBreakpointChange: noop,
     onLayoutChange: noop,
-    onWidthChange: noop
+    onWidthChange: noop,
+    useCSSTransforms: false
   };
 
   state = this.generateInitialState();
